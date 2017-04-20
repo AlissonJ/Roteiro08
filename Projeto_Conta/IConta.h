@@ -1,15 +1,14 @@
 #ifndef ICONTA_H_INCLUDED
 #define ICONTA_H_INCLUDED
+#include<string>
 
 class IConta{
 
     public:
 
-        void sacar(double valor) = 0;
+        virtual void sacar(double valor) = 0;
 
-        void depositar(double valor) =0;
-
-
+        virtual void depositar(double valor) = 0;
 };
 
 

@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1492691918 source:c:\users\alisson.alisson-pc\documents\universidade\2016.2(em 2017.1)\laboratorio de lp1(c++)\git\roteiro08\projeto_conta\main.cpp
+	<iostream>
+	"Conta.h"
+	"ContaEspecial.h"
+
+1492691961 c:\users\alisson.alisson-pc\documents\universidade\2016.2(em 2017.1)\laboratorio de lp1(c++)\git\roteiro08\projeto_conta\conta.h
+	"IConta.h"
+	<string>
+
+1492687503 c:\users\alisson.alisson-pc\documents\universidade\2016.2(em 2017.1)\laboratorio de lp1(c++)\git\roteiro08\projeto_conta\iconta.h
+	<string>
+
+1492692004 c:\users\alisson.alisson-pc\documents\universidade\2016.2(em 2017.1)\laboratorio de lp1(c++)\git\roteiro08\projeto_conta\contaespecial.h
+	"Conta.h"
+

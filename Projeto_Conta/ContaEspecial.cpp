@@ -1,6 +1,17 @@
-#include<ContaEspecial.h>
-#include<Conta.h>
+#include "ContaEspecial.h"
+using namespace std;
 
 void ContaEspecial::definirLimite(){
-    Conta::limite = (Conta::salarioMensal * 3);
+   setLimite( getSalarioMensal() * varLimiteEspecial );
 }
+
+ContaEspecial::ContaEspecial(){}
+
+ContaEspecial::ContaEspecial(string nomeC,double salarioM,string numConta,double saldo){
+    setNomeCliente(nomeC);
+    setSalarioMensal(salarioM);
+    setNumeroConta(numConta);
+    setSaldo(saldo);
+}
+
+

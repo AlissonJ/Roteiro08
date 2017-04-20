@@ -1,6 +1,8 @@
 #ifndef CONTA_H_INCLUDED
 #define CONTA_H_INCLUDED
-#include<IConta.h>
+#include "IConta.h"
+#include<string>
+using namespace std;
 
 class Conta:public IConta{
     private:
@@ -9,9 +11,9 @@ class Conta:public IConta{
         string numeroConta;
         double saldo;
         double limite;
+        int varLimite = 2;
     public:
-        Conta();
-        Conta(string nomeC, double salarioM, string numeroC, double sal);
+        Conta(string nome,double salario,string numConta,double sal);
         string getNomeCliente();
         void setNomeCliente(string n);
         double getSalarioMensal();
@@ -20,9 +22,11 @@ class Conta:public IConta{
         void setNumeroConta(string numero);
         double getSaldo();
         void setSaldo(double s);
-        //double getLimite();
-        //void setLimite(double l);
-        virtual void definirLimite();
+        void sacar(double valor);
+        void depositar(double valor);
+       // virtual void definirLimite();
+        void setLimite(double lim);
+
 };
 
 
